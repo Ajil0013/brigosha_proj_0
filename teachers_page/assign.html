@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Teacher page</title>
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles_2.css">
+
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header class="text-gray-600 body-font">
+
+
+
+    <!-- <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Aulas Classroom</span>
+      </a> -->
+      <!-- <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <button data-modal-target="#modal">Create Assignment</button>
+      </nav> -->
+
+
+
+    </div>
+
+
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Assignment</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+
+    <div class="container_1">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Title</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="title" name="title" placeholder="Title...">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Question</label>
+    </div>
+    <div class="col-75">
+      <textarea id="ques" name="ques" placeholder="Question along with instructions ..." style="height:200px"></textarea>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Test Cases</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="tcase" name="tcase" placeholder="Provide in the testcases ...">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Points</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="point" name="point" placeholder="Max points assigned to the problem.">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Difficulty</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="5star">⭐⭐⭐⭐⭐</option>
+        <option value="4star">⭐⭐⭐⭐</option>
+        <option value="3star">⭐⭐⭐</option>
+        <option value="2star">⭐⭐</option>
+        <option value="1star">⭐</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Programming Concepts</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="point" name="point" placeholder="Type in the concepts the question deals with...">
+    </div>
+  </div>
+
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+  </div>
+  <div id="overlay"></div>
+
+  </header>
+
+  <body>
+    <header>
+      <div class="flex">
+        <a href="home.html" class="head_1"><img src="school.png" class="icon" alt="ele">Aulas Classroom</a>
+      <div class="nav">
+        <ul>
+          <li class="home"><a href="home.html">Home</a></li>
+          <li class="tutorials"><a class="active" href="#">Assignment</a></li>
+          <li class="about"><a href="students.html">Students</a></li>
+          <li class="news"><a href="#">Grades</a></li>
+        </ul>
+      </div>
+      </div>
+    </header>
+
+    <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+
+    <button class="assign-btn" data-modal-target="#modal" type="button" name="button">Assign <span style="font-size:2rem;">+</span></button>
+
+    <br>
+
+</body>
+</html>

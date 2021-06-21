@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aulas coding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!---we had linked our css file----->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="full-page">
+      <div style="text-align:center; padding-top:50px">
+          <h1 style="font-family: 'Roboto', sans-serif">Welcome to <a href=''>Aulas</a> Coding Platform</h1>
+      </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box-1">
+              <h2 style="text-align:center; font-family: 'Open Sans', sans-serif">For Students</h2>
+              <p style="text-align:center; padding-top:10px; font-family: 'Oxygen', sans-serif;">Pursue your journey of becoming a good programmer.</p>
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn'>Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='Name' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+
+            <div class="form-box-2">
+              <h2 style="text-align:center; font-family: 'Open Sans', sans-serif">For Schools</h2>
+              <p style="text-align:center; padding-top:10px; font-family: 'Oxygen', sans-serif;">Start assessing your students' coding and develop their programming skills.</p>
+                <div class='button-box'>
+                    <div id='btn_sch'></div>
+                    <button type='button'onclick='login_sch()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register_sch()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login_sch' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn'>Log in</button>
+		 </form>
+		 <form id='register_sch' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='Name' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+    var x_sch=document.getElementById('login_sch');
+var y_sch=document.getElementById('register_sch');
+var z_sch=document.getElementById('btn_sch');
+function register_sch()
+{
+  x_sch.style.left='-400px';
+  y_sch.style.left='50px';
+  z_sch.style.left='110px';
+}
+function login_sch()
+{
+  x_sch.style.left='50px';
+  y_sch.style.left='450px';
+  z_sch.style.left='0px';
+}
+	</script>
+	<!-- <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event)
+        {
+            if (event.target == modal)
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script> -->
+</body>
+</html>
